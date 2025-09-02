@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roadmap Portfolio — Pure HTML & CSS</title>
+  <meta name="description" content="A unique, responsive one-page website structure using only HTML and CSS. Includes sticky sidebar, cards, timeline, skills, and contact sections.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+      <div class="brand" aria-label="Site brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="title">Roadmap Portfolio</div>
+          <div class="subtitle">Pure HTML + CSS</div>
+        </div>
+      </div>
+
+      <div class="controls" aria-label="Global controls">
+        <label class="toggle" title="Toggle dark mode (no JS)">
+          <input id="theme-toggle" type="checkbox" aria-label="Dark mode" />
+          <span>Dark</span>
+        </label>
+        <div class="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" placeholder="Quick filter (static demo)" aria-label="Search" />
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="muted" style="margin-top:1rem">Tip: This sidebar is <strong>sticky</strong> on large screens and becomes a normal block on mobile. Resize to see.</p>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+      <div class="container">
+        <!-- HERO / INTRO -->
+        <section id="intro" class="hero" aria-labelledby="hero-title">
+          <header class="section-head">
+            <span class="kicker">Welcome</span>
+            <h1 id="hero-title" class="h1">A clean, unique structure for your HTML + CSS website</h1>
+          </header>
+          <p class="prose">This single file shows a complete, modern layout: sticky sidebar navigation, a hero area, a responsive project grid, a vertical timeline, skill meters, and a contact form. Everything is built with <strong>only HTML and CSS</strong>, so you can use it as a starting point for assignments or personal sites.</p>
+          <div class="badges" aria-label="Tech badges">
+            <span class="badge">Semantic HTML</span>
+            <span class="badge">Flex + Grid</span>
+            <span class="badge">Fluid Type</span>
+            <span class="badge">No JS Toggle</span>
+            <span class="badge">Accessible Focus</span>
+          </div>
+        </section>
+
+        <!-- PROJECTS GRID -->
+        <section id="projects" aria-labelledby="projects-title">
+          <header class="section-head">
+            <span class="kicker">Showcase</span>
+            <h2 id="projects-title" class="h2">Projects</h2>
+          </header>
+
+          <div class="grid" role="list">
+            <article class="card" role="listitem">
+              <div class="media" aria-hidden="true"></div>
+              <h3>Landing Page Concept</h3>
+              <p class="muted">Simple hero + features using CSS Grid. Great for product teasers.</p>
+              <div class="meta">
+                <span class="chip">HTML</span><span class="chip">CSS Grid</span><span class="chip">Responsive</span>
+              </div>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="media" aria-hidden="true"></div>
+              <h3>Restaurant Menu</h3>
+              <p class="muted">Card-based menu with prices. Print-friendly and mobile first.</p>
+              <div class="meta">
+                <span class="chip">Flexbox</span><span class="chip">Typography</span><span class="chip">A11y</span>
+              </div>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="media" aria-hidden="true"></div>
+              <h3>Portfolio Case Study</h3>
+              <p class="muted">Problem → Solution → Outcome layout with timeline and metrics.</p>
+              <div class="meta">
+                <span class="chip">Semantic</span><span class="chip">Cards</span><span class="chip">Grid</span>
+              </div>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="media" aria-hidden="true"></div>
+              <h3>Blog Article</h3>
+              <p class="muted">Readable prose with fluid type and balanced line length.</p>
+              <div class="meta">
+                <span class="chip">Fluid Type</span><span class="chip">Prose</span>
+              </div>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="media" aria-hidden="true"></div>
+              <h3>Gallery Layout</h3>
+              <p class="muted">Masonry-like grid using auto-fit and minmax columns.</p>
+              <div class="meta">
+                <span class="chip">Grid</span><span class="chip">Aspect-ratio</span>
+              </div>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="media" aria-hidden="true"></div>
+              <h3>Contact Card</h3>
+              <p class="muted">Compact card for quick contact details and links.</p>
+              <div class="meta">
+                <span class="chip">Forms</span><span class="chip">Focus</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section id="timeline" aria-labelledby="timeline-title">
+          <header class="section-head">
+            <span class="kicker">Journey</span>
+            <h2 id="timeline-title" class="h2">Learning Timeline</h2>
+          </header>
+          <ol class="timeline" aria-label="Milestones">
+            <li class="t-item">
+              <div class="t-title">Started HTML Basics</div>
+              <div class="t-time">Week 1</div>
+              <p class="muted">Elements, tags, attributes, and semantic structure.</p>
+            </li>
+            <li class="t-item">
+              <div class="t-title">CSS Fundamentals</div>
+              <div class="t-time">Week 2</div>
+              <p class="muted">Selectors, the box model, typography, and colors.</p>
+            </li>
+            <li class="t-item">
+              <div class="t-title">Layout Systems</div>
+              <div class="t-time">Week 3</div>
+              <p class="muted">Flexbox and Grid for responsive, modern layouts.</p>
+            </li>
+            <li class="t-item">
+              <div class="t-title">Components & Utilities</div>
+              <div class="t-time">Week 4</div>
+              <p class="muted">Cards, badges, forms, and utility classes.</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" aria-labelledby="skills-title">
+          <header class="section-head">
+            <span class="kicker">Stack</span>
+            <h2 id="skills-title" class="h2">Skills</h2>
+          </header>
+          <div class="skills">
+            <div class="skill">
+              <div class="row"><strong>HTML</strong><span class="muted">Beginner → Intermediate</span></div>
+              <div class="bar"><i style="--value: 70%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="row"><strong>CSS</strong><span class="muted">Layouts, Typography</span></div>
+              <div class="bar"><i style="--value: 60%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="row"><strong>Responsive Design</strong><span class="muted">Mobile-first</span></div>
+              <div class="bar"><i style="--value: 55%"></i></div>
+            </div>
+            <div class="skill">
+              <div class="row"><strong>Accessibility</strong><span class="muted">Headings, Focus</span></div>
+              <div class="bar"><i style="--value: 50%"></i></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" aria-labelledby="contact-title">
+          <header class="section-head">
+            <span class="kicker">Say hi</span>
+            <h2 id="contact-title" class="h2">Contact</h2>
+          </header>
+          <div class="grid">
+            <div class="card">
+              <h3>Send a message</h3>
+              <form action="#" method="get">
+                <div>
+                  <label for="name">Your name</label>
+                  <input id="name" name="name" type="text" placeholder="e.g., Yahya" required>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div>
+                  <label for="msg">Message</label>
+                  <textarea id="msg" name="message" placeholder="Write your message..."></textarea>
+                </div>
+                <button class="btn" type="submit">Submit</button>
+              </form>
+            </div>
+
+            <div class="card">
+              <h3>Details</h3>
+              <p class="muted">Add your real contact details here. For now, these are placeholders.</p>
+              <ul>
+                <li>Email: you@example.com</li>
+                <li>Phone: +92 300 0000000</li>
+                <li>Location: Karachi, PK</li>
+                <li><a href="#top">Back to top ↑</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <p>© 2025 Your Name. Built with pure HTML + CSS. Customize colors in <code>:root</code> variables.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
